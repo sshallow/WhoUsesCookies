@@ -37,3 +37,5 @@ keys.json
 
 # typescript
 .tsbuildinfo
+
+.idea/
