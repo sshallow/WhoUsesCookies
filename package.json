@@ -2,8 +2,8 @@
   "name": "who-uses-cookies",
   "displayName": "Who uses cookies",
   "version": "0.0.1",
-  "description": "A basic Plasmo extension.",
-  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "description": "显示您安装的扩展程序的权限，显示谁在访问您的 cookies。",
+  "author": "doit_2017@outlook.com",
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",
@@ -16,6 +16,7 @@
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-scroll-area": "^1.0.5",
     "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-switch": "^1.0.3",
     "@radix-ui/react-tabs": "^1.0.4",
     "@reduxjs/toolkit": "^2.2.5",
     "class-variance-authority": "^0.7.0",
@@ -47,6 +48,7 @@
     ],
     "permissions": [
       "management",
-      "storage"]
+      "storage"
+    ]
   }
 }

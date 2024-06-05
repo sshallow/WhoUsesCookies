@@ -14,7 +14,8 @@ const badgeVariants = cva(
           "border-transparent bg-slate-100 text-slate-900 hover:bg-slate-100/80 dark:bg-slate-800 dark:text-slate-50 dark:hover:bg-slate-800/80",
         destructive:
           "border-transparent bg-red-500 text-slate-50 shadow hover:bg-red-500/80 dark:bg-red-900 dark:text-slate-50 dark:hover:bg-red-900/80",
-        outline: "text-slate-950 dark:text-slate-50",
+          warning: "border-transparent bg-yellow-500 text-slate-900 shadow hover:bg-yellow-500/80 dark:bg-yellow-600 dark:text-slate-50 dark:hover:bg-yellow-600/80", // Add warning variant styles
+          outline: "text-slate-950 dark:text-slate-50",
       },
     },
     defaultVariants: {
