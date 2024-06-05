@@ -1,6 +1,6 @@
 {
   "name": "who-uses-cookies",
-  "displayName": "Who uses cookies",
+  "displayName": "谁在用cookie",
   "version": "0.0.1",
   "description": "显示您安装的扩展程序的权限，显示谁在访问您的 cookies。",
   "author": "doit_2017@outlook.com",

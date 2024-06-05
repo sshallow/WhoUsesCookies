@@ -42,13 +42,13 @@ export const ExtensionListView = () => {
         <div>
             <Tabs defaultValue="all">
                 <div className="w-full mt-auto px-4 py-2 flex items-center justify-between">
-                    <button className=" mt-3  mt-0 text-gray-400 hover:text-gray-900 " onClick={() => {
-                        chrome.tabs.create({
-                            url: "/options.html"
-                        })
-                    }}>
-                        <GearIcon className="h-4 w-4" />
-                    </button>
+                    {/*<button className=" mt-3  mt-0 text-gray-400 hover:text-gray-900 " onClick={() => {*/}
+                    {/*    chrome.tabs.create({*/}
+                    {/*        url: "/options.html"*/}
+                    {/*    })*/}
+                    {/*}}>*/}
+                    {/*    <GearIcon className="h-4 w-4" />*/}
+                    {/*</button>*/}
 
                     <div className="flex mt-3 justify-center mt-0 space-x-5 rtl:space-x-reverse">
                         <a href="https://twitter.com/doit_2017" target="_blank"
@@ -62,7 +62,7 @@ export const ExtensionListView = () => {
                                       clipRule="evenodd"/>
                             </svg>
                         </a>
-                        <a href="https://github.com/sshallow/AtMyNotion-Extension" target="_blank"
+                        <a href="https://github.com/sshallow/WhoUsesCookies" target="_blank"
                            className="text-gray-400 hover:text-gray-900 ">
                             <svg className="w-4 h-4" aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg"
