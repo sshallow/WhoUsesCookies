@@ -43,6 +43,49 @@ There are two ways to install the WhoUsesCookies extension:
 
 Enjoy!
 
+## How to manually check extension permissions?
+
+Detailed steps to manually check browser extension permissions on macOS. Windows users can query the path of the extension by themselves, the principle is the same.
+
+### Edge browser
+
+1. Open Finder and go to Edge's profile folder (shift+command+g): `~/Library/Application Support/Microsoft Edge/`
+2. Find the `Extensions` folder in the `Default` folder or a folder similar to `Profile 1 (Profile+number)`.
+3. After entering the `Default/Extensions` or `Profile 1/Extensions` folder, find the corresponding folder according to the extension ID and open the `manifest.json` in it
+4. Open the `manifest.json` file in the folder and check the `permissions` field. For example:
+   ```json
+   "permissions": [
+       "storage",
+       "https://*/*",
+       "http://*/*",
+       "file://*/*",
+       "tabCapture",
+       "webNavigation"
+   ]
+   ```
+   The above permissions include: `storage`, `tabCapture`, `webNavigation`, and domain scopes `https://*/*`, `http://*/*` and `file://*/*`.
+
+### Chrome browser
+
+1. Open Finder and go to Chrome's profile folder (shift+command+g): `~/Library/Application Support/Google/Chrome/Default/`
+2. Find the `Extensions` folder in the `Default` folder or a folder similar to `Profile 1 (Profile+number)`.
+3. After entering the `Default/Extensions` or `Profile 1/Extensions` folder, find the corresponding folder according to the extension ID and open the `manifest.json` in it
+
+4. Open the `manifest.json` file in the folder and check the `permissions` field. For example:
+   ```json
+   "permissions": [
+       "storage",
+       "https://*/*",
+       "http://*/*",
+       "file://*/*",
+       "tabCapture",
+       "webNavigation"
+   ]
+   ```
+   The above permissions include: `storage`, `tabCapture`, `webNavigation`, and domain ranges `https://*/*`, `http://*/*` and `file://*/*`.
+
+Using the above method, you can manually check whether the installed browser extensions have permission to access sensitive information such as cookies.
+
 ## Feedback
 
 If you run into any issues or have suggestions for improvements, please file an issue or submit a pull request on GitHub.

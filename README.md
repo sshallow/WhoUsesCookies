@@ -41,8 +41,49 @@ https://github.com/sshallow/WhoUsesCookies/assets/21257340/489bbea0-3b15-4f01-a8
 7. 安装: 点击“加载已解压程序”选择项目目录下的 `build/chrome-mv3-prod` 文件夹。
 8. 查看权限: 安装完成后，点击浏览器工具栏上的 “谁在用cookies” 图标打开弹出窗口，查看哪些扩展正在访问您的Cookies。
 
-
 尽情使用吧!
+
+## 如何手动检查扩展权限？
+
+在 macOS 系统上手动检查浏览器扩展程序权限的详细步骤。Windows 用户可以自行查询扩展所在路径，原理相同。
+
+### Edge浏览器
+
+1. 打开访达，前往 Edge 的配置文件夹（shift+command+g）：`~/Library/Application Support/Microsoft Edge/`
+2. 在 `Default` 文件夹或类似 `Profile 1 (Profile+数字)` 的文件夹中找到 `Extensions` 文件夹。
+3. 进入`Default/Extensions` 或 `Profile 1/Extensions` 文件夹后，根据扩展程序ID找到对应的文件夹，打开其中的 `manifest.json`
+4. 打开该文件夹中的 `manifest.json` 文件，并检查 `permissions` 字段。例如:
+   ```json
+   "permissions": [
+       "storage",
+       "https://*/*",
+       "http://*/*",
+       "file://*/*",
+       "tabCapture",
+       "webNavigation"
+   ]
+   ```
+   上述权限包括：`storage`、`tabCapture`、`webNavigation`，以及域名范围 `https://*/*`、`http://*/*` 和 `file://*/*`。
+
+### Chrome浏览器
+
+1. 打开访达，前往 Chrome 的配置文件夹（shift+command+g）：`~/Library/Application Support/Google/Chrome/Default/`
+2. 在 `Default` 文件夹或类似 `Profile 1 (Profile+数字)` 的文件夹中找到 `Extensions` 文件夹。
+3. 进入`Default/Extensions` 或 `Profile 1/Extensions` 文件夹后，根据扩展程序ID找到对应的文件夹，打开其中的 `manifest.json`
+4. 打开该文件夹中的 `manifest.json` 文件，并检查 `permissions` 字段。例如:
+   ```json
+   "permissions": [
+       "storage",
+       "https://*/*",
+       "http://*/*",
+       "file://*/*",
+       "tabCapture",
+       "webNavigation"
+   ]
+   ```
+   上述权限包括：`storage`、`tabCapture`、`webNavigation`，以及域名范围 `https://*/*`、`http://*/*` 和 `file://*/*`。
+
+通过以上方式，你可以手动检查安装的浏览器扩展程序是否具有访问 Cookie 等敏感信息的权限。
 
 ## 反馈建议
 
