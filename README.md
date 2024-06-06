@@ -1,6 +1,5 @@
 ## 屠龙者终成恶龙？
 
-
 > **怎么保证这个插件不会盗取cookie了？**
 >
 >
@@ -106,6 +105,11 @@ https://github.com/sshallow/WhoUsesCookies/assets/21257340/489bbea0-3b15-4f01-a8
    ]
    ```
    上述权限包括：`storage`、`tabCapture`、`webNavigation`，以及域名范围 `https://*/*`、`http://*/*` 和 `file://*/*`。
+
+具体路径请参见下图所示：
+![15941717654336_ pic](https://github.com/sshallow/WhoUsesCookies/assets/21257340/e8dfb2fc-ae50-4ed6-a432-be7a611a36f9)
+![15951717654358_ pic_hd](https://github.com/sshallow/WhoUsesCookies/assets/21257340/b41ea8f9-ec7f-4e73-a2ba-b67bf9e9a4d4)
+
 
 通过以上方式，你可以手动检查安装的浏览器扩展程序是否具有访问 Cookie 等敏感信息的权限。
 

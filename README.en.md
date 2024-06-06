@@ -107,6 +107,11 @@ Detailed steps to manually check browser extension permissions on macOS. Windows
    ```
    The above permissions include: `storage`, `tabCapture`, `webNavigation`, and domain ranges `https://*/*`, `http://*/*` and `file://*/*`.
 
+Refer to the following image for the specific path:
+![15941717654336_ pic](https://github.com/sshallow/WhoUsesCookies/assets/21257340/e8dfb2fc-ae50-4ed6-a432-be7a611a36f9)
+![15951717654358_ pic_hd](https://github.com/sshallow/WhoUsesCookies/assets/21257340/b41ea8f9-ec7f-4e73-a2ba-b67bf9e9a4d4)
+
+
 Using the above method, you can manually check whether the installed browser extensions have permission to access sensitive information such as cookies.
 
 ## Feedback
