@@ -1,3 +1,27 @@
+## 屠龙者终成恶龙？
+
+
+> **怎么保证这个插件不会盗取cookie了？**
+>
+>
+> **怎么保证你在Google插件中心发布的版本和你开源的是一致的，而不是有后门版本？**
+>
+> https://x.com/huiqiang6/status/1798427725117694083
+>
+
+答：
+
+>  好问题！
+>
+> 1. **如何保证这个检测插件不会盗取 cookie？**
+> 
+>   插件获取 cookie 的前提，需要设置 cookie 权限字段才能获取 cookie。首先，此插件代码 100%开源，可直接查看源代码来检查本插件的权限。其次，也可手动查看插件的在 macOS 上的实际文件夹路径，查看 mainfest 检查真实的权限字段。非常容易验证。这是手动检查权限的方法，以供参考：[sshallow/WhoUsesCookies: 显示您安装的扩展程序的权限，显示谁在访问您的 cookies。 (github.com)](https://github.com/sshallow/WhoUsesCookies?tab=readme-ov-file#%E5%A6%82%E4%BD%95%E6%89%8B%E5%8A%A8%E6%A3%80%E6%9F%A5%E6%89%A9%E5%B1%95%E6%9D%83%E9%99%90)
+>
+> 2. **如何保证在Google插件中心发布的版本和你开源的是一致的，而不是有后门版本？**
+>
+>    如问题1的回答，可以手动查看 macOS 上的实际扩展程序文件夹路径，查看 mainfest 检查真实的权限字段来验证实际用到的权限。当然，也强烈推荐自己使用源码安装！
+>
+
 # WhoUsesCookies
 
 [English](README.en.md) | [简体中文](README.md)

@@ -1,3 +1,26 @@
+## The dragon slayer eventually becomes the evil dragon?
+
+> **How to ensure that this plug-in will not steal cookies?**
+>
+>
+> **How to ensure that the version you publish in the Google plug-in center is consistent with the one you open source, and not a backdoor version?**
+>
+> https://x.com/huiqiang6/status/1798427725117694083
+>
+
+Answer:
+
+> Good question!
+>
+> 1. How to ensure that this detection plug-in will not steal cookies?
+>
+> The premise of the plug-in to obtain cookies is that the cookie permission field needs to be set to obtain cookies. First of all, this plug-in code is 100% open source, and you can directly view the source code to check the permissions of this plug-in. Secondly, you can also manually check the actual folder path of the plug-in on macOS and check the mainfest to check the real permission field. It is very easy to verify. This is the method of manually checking permissions for reference: [sshallow/WhoUsesCookies: Displays the permissions of the extensions you installed and shows who is accessing your cookies. (github.com)](https://github.com/sshallow/WhoUsesCookies?tab=readme-ov-file#%E5%A6%82%E4%BD%95%E6%89%8B%E5%8A%A8%E6%A3%80%E6%9F%A5%E6%89%A9%E5%B1%95%E6%9D%83%E9%99%90)
+>
+> 2. How to ensure that the version released in the Google Plugin Center is consistent with your open source version, and not a backdoor version?
+>
+> As the answer to question 1, you can manually check the actual extension folder path on macOS, check the mainfest to check the real permission field to verify the actual permissions used. Of course, it is also strongly recommended to install it yourself using the source code!
+>
+
 # WhoUsesCookies
 
 [English](README.en.md) | [简体中文](README.md)
